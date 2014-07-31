@@ -1,0 +1,11 @@
+{
+  "name": "rer-api",
+  "version": "0.0.1",
+  "description": "REST API for RER Court info",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Allan <michaelallan@optushome.com.au>",
+  "private": true
+}
