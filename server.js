@@ -1,3 +1,6 @@
+var dotenv = require('dotenv');
+dotenv.load();
+
 var express = require('express');
 var restful = require('node-restful');
 var mongoose = restful.mongoose;    // Extend mongo with the restful
@@ -13,7 +16,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb://localhost/courtinfo');
+mongoose.connect(process.env.MONGODB_URL);
 
 var Case = app.resource = restful.model('case', mongoose.Schema({
 
